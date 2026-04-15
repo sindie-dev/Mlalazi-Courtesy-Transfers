@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MLALAZI | Premier Executive Transfers</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400;700&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#b0c6f9",
+                        "primary-fixed-dim": "#e9c176",
+                        "secondary": "#c8c6c5",
+                        "on-secondary-fixed-variant": "#474646",
+                        "on-primary": "#412d00",
+                        "tertiary": "#b0c6f9",
+                        "tertiary-container": "#8fa5d6",
+                        "surface-container-highest": "#353534",
+                        "on-tertiary": "#173059",
+                        "surface-container": "#201f1f",
+                        "on-background": "#e5e2e1",
+                        "inverse-on-surface": "#313030",
+                        "surface-container-low": "#1c1b1b",
+                        "surface-tint": "#e9c176",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-error-container": "#ffdad6",
+                        "on-surface": "#e5e2e1",
+                        "surface-bright": "#393939",
+                        "on-tertiary-container": "#233a65",
+                        "primary": "#e9c176",
+                        "outline": "#9a8f80",
+                        "error-container": "#93000a",
+                        "inverse-primary": "#775a19",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "on-tertiary-fixed-variant": "#304671",
+                        "background": "#131313",
+                        "on-primary-fixed": "#261900",
+                        "surface-variant": "#353534",
+                        "outline-variant": "#4e4639",
+                        "error": "#ffb4ab",
+                        "tertiary-fixed": "#d8e2ff",
+                        "on-tertiary-fixed": "#001a41",
+                        "secondary-container": "#4a4949",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "surface-dim": "#131313",
+                        "primary-container": "#c5a059",
+                        "on-primary-fixed-variant": "#5d4201",
+                        "on-secondary-container": "#bab8b7",
+                        "primary-fixed": "#ffdea5",
+                        "on-error": "#690005",
+                        "surface-container-high": "#2a2a2a",
+                        "on-secondary": "#313030",
+                        "surface": "#131313",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-surface-variant": "#d1c5b4",
+                        "on-primary-container": "#4e3700",
+                        "inverse-surface": "#e5e2e1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #131313; scroll-behavior: smooth; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .glass-panel { backdrop-filter: blur(30px); -webkit-backdrop-filter: blur(30px); }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .metallic-gradient { background: linear-gradient(135deg, #e9c176 0%, #c5a059 100%); }
+        .text-gradient { background: linear-gradient(135deg, #e9c176 0%, #c5a059 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .matte-black { background-color: #121212; }
+        .metallic-sheen { background: linear-gradient(135deg, rgba(233,193,118,0.1) 0%, rgba(255,255,255,0.05) 50%, rgba(233,193,118,0.1) 100%); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="text-on-surface" data-mode="connect">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#131313]/40 backdrop-blur-3xl">
+<nav class="flex justify-between items-center px-6 py-4 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#C5A059] cursor-pointer hover:scale-95 transition-transform" data-icon="menu">menu</span>
+<span class="font-['Noto_Serif'] text-xl tracking-[0.2em] font-light text-[#E9C176]">MLALAZI</span>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Manrope'] font-semibold uppercase text-[10px] tracking-widest text-[#E9C176]/70 hover:text-white transition-colors duration-300" href="#services">Services</a>
+<a class="font-['Manrope'] font-semibold uppercase text-[10px] tracking-widest text-[#E9C176]/70 hover:text-white transition-colors duration-300" href="#fleet">Fleet</a>
+<a class="font-['Manrope'] font-semibold uppercase text-[10px] tracking-widest text-[#E9C176]/70 hover:text-white transition-colors duration-300" href="#about">About</a>
+<a class="font-['Manrope'] font-semibold uppercase text-[10px] tracking-widest text-[#E9C176]/70 hover:text-white transition-colors duration-300" href="#contact">Contact</a>
+</div>
+<button class="metallic-gradient text-on-primary font-['Manrope'] font-bold uppercase text-[10px] tracking-widest px-6 py-2.5 rounded-lg active:scale-95 transition-all">
+                Book Now
+            </button>
+</nav>
+</header>
+<!-- Hero Section -->
+<section class="relative h-[884px] flex items-center justify-center overflow-hidden" data-stitch-vh="h-[884px]===h-screen">
+<div class="absolute inset-0 z-0">
+<img alt="Luxury sedan in Sandton city" class="w-full h-full object-cover opacity-60" data-alt="Dark grey luxury sedan parked in a modern urban financial district at dusk with shimmering skyscraper lights in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBt-OZdEQDYgQVcLG-HPwfWHrnmqD6hIaA_T_my90Zl1aP4YLQIqbSghq7DNtp0V5VqkQK9rYgub9MSWkLnToYwK-jOzGEZel__QgDlrA0Bqg_ZbK42gRFBnndLpsTBTkmLAScN6dqyCawEkhxDA2zNhBRQgUlDVvC_-03WVPmTOblsI5wTZ2KhGqcEMt1OaeT4FRtysdyf8pe89DiYGUjwJrLIDRyTTomXOyYaTfBnE9cmetB1AeNaZQ7ZXz77KDWUzvX93p7_QXnJ"/>
+<div class="absolute inset-0 bg-gradient-to-b from-[#131313]/20 via-[#131313]/60 to-[#131313]"></div>
+</div>
+<div class="relative z-10 w-full max-w-7xl px-6 flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="text-center md:text-left max-w-2xl">
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl font-light tracking-tight leading-none mb-6">
+                    Moving at the <br/>
+<span class="text-gradient italic">Speed of Time</span>
+</h1>
+<p class="font-body text-lg md:text-xl text-on-surface-variant font-light max-w-lg mb-8">
+                    South Africa’s premier executive transfer service since 2013. Precision, privacy, and prestige.
+                </p>
+</div>
+<!-- Quick Quote Widget -->
+<div class="w-full max-w-md bg-surface-container-high/40 glass-panel p-8 rounded-xl border border-outline-variant/10 shadow-2xl">
+<h3 class="font-label uppercase text-[10px] tracking-[0.3em] text-primary mb-6">Quick Quote</h3>
+<div class="space-y-4">
+<div>
+<label class="block text-[10px] text-on-surface-variant uppercase tracking-widest mb-2">Pickup Location</label>
+<input class="w-full bg-surface-container-highest/60 border-none text-sm p-4 rounded-lg focus:ring-1 focus:ring-primary/40 text-on-surface" placeholder="O.R. Tambo International" type="text"/>
+</div>
+<div>
+<label class="block text-[10px] text-on-surface-variant uppercase tracking-widest mb-2">Destination</label>
+<input class="w-full bg-surface-container-highest/60 border-none text-sm p-4 rounded-lg focus:ring-1 focus:ring-primary/40 text-on-surface" placeholder="Sandton CBD" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block text-[10px] text-on-surface-variant uppercase tracking-widest mb-2">Date</label>
+<input class="w-full bg-surface-container-highest/60 border-none text-sm p-4 rounded-lg focus:ring-1 focus:ring-primary/40 text-on-surface" type="date"/>
+</div>
+<div class="flex items-end">
+<button class="w-full h-[52px] metallic-gradient text-on-primary font-bold text-xs uppercase tracking-widest rounded-lg">Estimate</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-24 px-6 bg-surface" id="services">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
+<div>
+<span class="font-label text-primary uppercase tracking-[0.4em] text-[10px]">Exceptional Standards</span>
+<h2 class="font-headline text-4xl md:text-5xl mt-4 font-light">Our Specialized <span class="italic">Services</span></h2>
+</div>
+<div class="w-32 h-[1px] bg-outline-variant/30 mb-4 hidden md:block"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-outline-variant/10 border border-outline-variant/10 overflow-hidden rounded-xl">
+<!-- Corporate -->
+<div class="group bg-surface-container p-10 hover:bg-surface-container-high transition-colors duration-500">
+<span class="material-symbols-outlined text-primary text-4xl mb-8 group-hover:scale-110 transition-transform duration-500" data-icon="business_center">business_center</span>
+<h3 class="font-headline text-xl mb-4">Corporate</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Dedicated logistics for business professionals, ensuring punctual arrivals and departures for critical meetings.</p>
+</div>
+<!-- Executive -->
+<div class="group bg-surface-container p-10 hover:bg-surface-container-high transition-colors duration-500">
+<span class="material-symbols-outlined text-primary text-4xl mb-8 group-hover:scale-110 transition-transform duration-500" data-icon="workspace_premium">workspace_premium</span>
+<h3 class="font-headline text-xl mb-4">Executive</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">High-profile transport with discreet, highly-trained chauffeurs for C-suite executives and VIPs.</p>
+</div>
+<!-- Personal Driver -->
+<div class="group bg-surface-container p-10 hover:bg-surface-container-high transition-colors duration-500">
+<span class="material-symbols-outlined text-primary text-4xl mb-8 group-hover:scale-110 transition-transform duration-500" data-icon="person_pin">person_pin</span>
+<h3 class="font-headline text-xl mb-4">Personal Driver</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Your personal chauffeur available for a day or a week, adapting seamlessly to your specific schedule.</p>
+</div>
+<!-- SADC -->
+<div class="group bg-surface-container p-10 hover:bg-surface-container-high transition-colors duration-500">
+<span class="material-symbols-outlined text-primary text-4xl mb-8 group-hover:scale-110 transition-transform duration-500" data-icon="public">public</span>
+<h3 class="font-headline text-xl mb-4">Long-distance (SADC)</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Cross-border luxury transfers throughout the SADC region, including Zimbabwe, Botswana, and Mozambique.</p>
+</div>
+<!-- Special Events -->
+<div class="group bg-surface-container p-10 hover:bg-surface-container-high transition-colors duration-500">
+<span class="material-symbols-outlined text-primary text-4xl mb-8 group-hover:scale-110 transition-transform duration-500" data-icon="celebration">celebration</span>
+<h3 class="font-headline text-xl mb-4">Special Events</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Elegance for weddings, gala dinners, and red carpet events with perfectly maintained premium vehicles.</p>
+</div>
+<!-- Chauffeur Rental -->
+<div class="group bg-surface-container p-10 hover:bg-surface-container-high transition-colors duration-500">
+<span class="material-symbols-outlined text-primary text-4xl mb-8 group-hover:scale-110 transition-transform duration-500" data-icon="directions_car">directions_car</span>
+<h3 class="font-headline text-xl mb-4">Chauffeur Rental</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Full-day luxury vehicle rental with a driver to manage all navigation and parking while you focus.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Trusted Partners & Portfolio Section -->
+<section class="py-24 matte-black px-6">
+<div class="max-w-7xl mx-auto space-y-24">
+<!-- Subsection A: Early Client Portfolio -->
+<div>
+<div class="mb-10">
+<h2 class="font-headline text-3xl text-white font-light mb-2">Partnering with Visionaries</h2>
+<p class="font-label text-[#C5A059] uppercase tracking-[0.2em] text-[10px] font-semibold">Early Client Portfolio (2006-2013)</p>
+</div>
+<div class="flex overflow-x-auto no-scrollbar gap-4 pb-4">
+<div class="flex-none w-48 h-24 metallic-sheen border border-outline-variant/10 rounded flex items-center justify-center p-4">
+<span class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold text-center">Our Models Africa</span>
+</div>
+<div class="flex-none w-48 h-24 metallic-sheen border border-outline-variant/10 rounded flex items-center justify-center p-4">
+<span class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold text-center">Boston Consulting Group</span>
+</div>
+<div class="flex-none w-48 h-24 metallic-sheen border border-outline-variant/10 rounded flex items-center justify-center p-4">
+<span class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold text-center">Breinstorm Brand Architects</span>
+</div>
+<div class="flex-none w-48 h-24 metallic-sheen border border-outline-variant/10 rounded flex items-center justify-center p-4">
+<span class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold text-center">Hyatt Hotel</span>
+</div>
+</div>
+<div class="h-px w-full bg-[#C5A059]/10 mt-12"></div>
+</div>
+<!-- Subsection B: Established Client Base -->
+<div>
+<div class="mb-10">
+<h2 class="font-headline text-3xl text-white font-light mb-2">Trusted by Industry Leaders</h2>
+<p class="font-label text-[#C5A059] uppercase tracking-[0.2em] text-[10px] font-semibold">Ongoing commitment since 2013</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+<div class="p-6 bg-surface-container-low border border-outline-variant/5 rounded-lg flex items-center justify-center">
+<span class="text-[10px] uppercase tracking-widest text-on-surface/60 font-bold">Total Exposure</span>
+</div>
+<div class="p-6 bg-surface-container-low border border-outline-variant/5 rounded-lg flex items-center justify-center">
+<span class="text-[10px] uppercase tracking-widest text-on-surface/60 font-bold">Breinstorm / Pendoring</span>
+</div>
+<div class="p-6 bg-surface-container-low border border-primary/20 rounded-lg flex flex-col items-center justify-center gap-2 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-8 h-8 metallic-gradient opacity-10 rotate-45 translate-x-4 -translate-y-4"></div>
+<span class="text-[10px] uppercase tracking-widest text-primary font-bold">SA Idols</span>
+<span class="text-[8px] text-on-surface-variant italic">Season 9 — 19 (Final)</span>
+</div>
+<div class="p-6 bg-surface-container-low border border-outline-variant/5 rounded-lg flex items-center justify-center">
+<span class="text-[10px] uppercase tracking-widest text-on-surface/60 font-bold">Brand Arc</span>
+</div>
+<div class="p-6 bg-surface-container-low border border-outline-variant/5 rounded-lg flex items-center justify-center">
+<span class="text-[10px] uppercase tracking-widest text-on-surface/60 font-bold">OnPoint PR</span>
+</div>
+<div class="p-6 bg-surface-container-low border border-outline-variant/5 rounded-lg flex items-center justify-center">
+<span class="text-[10px] uppercase tracking-widest text-on-surface/60 font-bold">SADBC</span>
+</div>
+</div>
+<div class="h-px w-full bg-[#C5A059]/10 mt-12"></div>
+</div>
+<!-- Subsection C: Current Corporate Clients -->
+<div>
+<div class="mb-10">
+<h2 class="font-headline text-3xl text-white font-light mb-2">Driving Business Excellence</h2>
+<p class="font-label text-[#C5A059] uppercase tracking-[0.2em] text-[10px] font-semibold">Our Current Corporate Partners</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<!-- Row 1 -->
+<div class="p-4 border border-outline-variant/10 rounded-lg bg-surface-container/30 flex items-center justify-center">
+<span class="text-[10px] uppercase tracking-widest text-on-surface-variant">Matuka Media</span>
+</div>
+<div class="p-4 border border-outline-variant/10 rounded-lg bg-surface-container/30 flex items-center justify-center">
+<span class="text-[10px] uppercase tracking-widest text-on-surface-variant">OnPoint PR</span>
+</div>
+<div class="p-4 border border-outline-variant/10 rounded-lg bg-surface-container/30 flex items-center justify-center">
+<span class="text-[10px] uppercase tracking-widest text-on-surface-variant">Innovator Trust</span>
+</div>
+<div class="p-4 border border-outline-variant/10 rounded-lg bg-surface-container/30 flex items-center justify-center">
+<span class="text-[10px] uppercase tracking-widest text-on-surface-variant">PUKU</span>
+</div>
+<!-- Row 2 -->
+<div class="p-4 border border-outline-variant/10 rounded-lg bg-surface-container/30 flex items-center justify-center">
+<span class="text-[10px] uppercase tracking-widest text-on-surface-variant">Mazothe Tech</span>
+</div>
+<div class="p-4 border border-outline-variant/10 rounded-lg bg-surface-container/30 flex items-center justify-center">
+<span class="text-[10px] uppercase tracking-widest text-on-surface-variant">Boom Shaka</span>
+</div>
+<div class="p-4 border border-outline-variant/10 rounded-lg bg-surface-container/30 flex items-center justify-center">
+<span class="text-[10px] uppercase tracking-widest text-on-surface-variant">Alike Thinkers</span>
+</div>
+<div class="p-4 border border-outline-variant/10 rounded-lg bg-surface-container/30 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="security">security</span>
+<span class="text-[10px] uppercase tracking-widest text-on-surface-variant">HMHF</span>
+</div>
+<!-- Row 3 -->
+<div class="p-4 border border-outline-variant/10 rounded-lg bg-surface-container/30 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="shield">shield</span>
+<span class="text-[10px] uppercase tracking-widest text-on-surface-variant">JASA</span>
+</div>
+<div class="p-4 border border-outline-variant/10 rounded-lg bg-surface-container/30 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="music_note">music_note</span>
+<span class="text-[10px] uppercase tracking-widest text-on-surface-variant">JPO</span>
+</div>
+<div class="p-4 border border-outline-variant/10 rounded-lg bg-surface-container/30 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="visibility">visibility</span>
+<span class="text-[10px] uppercase tracking-widest text-on-surface-variant">Owl Models Africa</span>
+</div>
+<div class="p-4 border border-primary/20 rounded-lg bg-surface-container/30 flex flex-col items-center justify-center">
+<span class="font-headline text-[12px] italic text-primary">David Tlale</span>
+<span class="text-[8px] uppercase tracking-widest text-on-surface-variant">DT Culture</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Fleet Showcase -->
+<section class="py-24 bg-surface-container-low overflow-hidden" id="fleet">
+<div class="max-w-7xl mx-auto px-6 mb-12">
+<span class="font-label text-primary uppercase tracking-[0.4em] text-[10px]">The Fleet</span>
+<h2 class="font-headline text-4xl md:text-5xl mt-4 font-light">Curated <span class="italic">Prestige</span></h2>
+</div>
+<div class="flex overflow-x-auto no-scrollbar gap-8 px-6 pb-12 snap-x">
+<!-- Mercedes C-Class -->
+<div class="flex-none w-80 md:w-[450px] snap-center group">
+<div class="relative h-[300px] mb-6 overflow-hidden rounded-xl bg-surface-container-highest">
+<img alt="Mercedes C-Class" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Modern black Mercedes-Benz C-Class sedan side profile on a clean gray background with studio lighting highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAPqxjubKjP2YputCXhSG0ZHrAq8pZg_duzvaKdxnlogZhXAb8puL4TdANsECHXrHS_uDAmImvMjWb8meQFUx3zORKw2hhRFkN1Bn_9ZYl9dU1Zf_U9M7oU7RVQbj9IrPuY3Sq7lxnugRQ7mW0jTUzd58SUIBmjmj7-948O7tjM4EY8BmFFVDqBOt_GXcE1uA48DXOycdyAqWn7BupqCgTCtl_fpfFWCH1Ypa4AB88bZvoKf1rcEMSOAOJynz60dNIOZtKkw8y5Zi2"/>
+<div class="absolute bottom-4 left-4 flex gap-2">
+<span class="bg-black/60 glass-panel px-3 py-1 rounded text-[10px] uppercase font-semibold tracking-widest">Executive</span>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-2xl mb-1">Mercedes C-Class</h3>
+<p class="font-body text-xs text-on-surface-variant uppercase tracking-widest">Sleek Efficiency</p>
+</div>
+<div class="text-right">
+<div class="flex items-center gap-4 text-on-surface-variant text-xs mb-4">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]" data-icon="person">person</span> 3</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]" data-icon="luggage">luggage</span> 2</span>
+</div>
+<button class="text-primary text-[10px] font-bold uppercase tracking-widest hover:underline">Select Vehicle</button>
+</div>
+</div>
+</div>
+<!-- Mercedes V-Class -->
+<div class="flex-none w-80 md:w-[450px] snap-center group">
+<div class="relative h-[300px] mb-6 overflow-hidden rounded-xl bg-surface-container-highest">
+<img alt="Mercedes V-Class" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Luxury black Mercedes-Benz V-Class MPV with tinted windows in a clean professional environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7BQXBBGrYIwtbnz-nYo6K3HUtZZVxZzcF748k3Awow33xokF3IYWEMZIgEgE5XRJNxhHZdM7slKqhjuWxs0h9GIMxE_OcZMxF9NZwlKTU-P3D-dFmn2wt6rh9v9_Ev_uH3GEyVQAvLULnKbXLXVX9q8QFQrNTOJ9iWfTx___3cyFv7UcDXPtqm_uo1z-zKOY_PhOGY4YKPotWOsEPtAPBlbcWU-SdA5DgA3DEjNO4FBatiiMGGF4p6xRHZJxzH0ADJRLWoPIgnOFu"/>
+<div class="absolute bottom-4 left-4 flex gap-2">
+<span class="bg-black/60 glass-panel px-3 py-1 rounded text-[10px] uppercase font-semibold tracking-widest">Group Luxury</span>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-2xl mb-1">Mercedes V-Class</h3>
+<p class="font-body text-xs text-on-surface-variant uppercase tracking-widest">First Class Suite</p>
+</div>
+<div class="text-right">
+<div class="flex items-center gap-4 text-on-surface-variant text-xs mb-4">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]" data-icon="person">person</span> 7</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]" data-icon="luggage">luggage</span> 5</span>
+</div>
+<button class="text-primary text-[10px] font-bold uppercase tracking-widest hover:underline">Select Vehicle</button>
+</div>
+</div>
+</div>
+<!-- Toyota Prado -->
+<div class="flex-none w-80 md:w-[450px] snap-center group">
+<div class="relative h-[300px] mb-6 overflow-hidden rounded-xl bg-surface-container-highest">
+<img alt="Toyota Prado" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Robust white Toyota Prado SUV driving on a clean asphalt road with dramatic lighting and high-contrast finish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApVUO-kzJuOOptCbqlqJPeEdMykqoN-tPvKo5OYahfla3_kASwXjBTB1RfimM9bH5PtRya4xTxlGFbGYbjluzCMyKK01KXrgs--IBnrua4XIPr2GTXCPiYnZdIRkFH3L8k-8ukS8p4xhprSxbrKBNN0imesgUr04RbhnqJ6KNtFy7CTzIeKs2Rksa4jxAagqE7aB1wvWEdMn_ANzB0uavpTafBDzBlP__iskXSeA3DxK0QK_l5wJP1s-NN7HOPUCEioVBWcijJPfoh"/>
+<div class="absolute bottom-4 left-4 flex gap-2">
+<span class="bg-black/60 glass-panel px-3 py-1 rounded text-[10px] uppercase font-semibold tracking-widest">All-Terrain</span>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-2xl mb-1">Toyota Prado</h3>
+<p class="font-body text-xs text-on-surface-variant uppercase tracking-widest">Rugged Command</p>
+</div>
+<div class="text-right">
+<div class="flex items-center gap-4 text-on-surface-variant text-xs mb-4">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]" data-icon="person">person</span> 4</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]" data-icon="luggage">luggage</span> 4</span>
+</div>
+<button class="text-primary text-[10px] font-bold uppercase tracking-widest hover:underline">Select Vehicle</button>
+</div>
+</div>
+</div>
+<!-- VW Crafter -->
+<div class="flex-none w-80 md:w-[450px] snap-center group">
+<div class="relative h-[300px] mb-6 overflow-hidden rounded-xl bg-surface-container-highest">
+<img alt="VW Crafter" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Large executive VW Crafter shuttle bus in obsidian black parked near a modern airport terminal building" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp8l7kiOTn5P0_uJaWOorVDsPqS4r9fpgWs4tvr_NvQjcFERsAuH5KG_juBRiOgt8jLvYkYUpx8nJBgG537L7PuRnDwrWnGNGFum3rZo7sUOlwROiW5P4hNaZp9AnVSyRHHXYWDX2ls4qHBE_1wmoY0YkdglAWPwF2pGEGmotRo75XkTRQYjEknUsiHqfUu8_6Ub2Ciw-icCkklJkAUgcorH8XTkBhO5B9NOWauW1VWFumTMxVKuY8P9kmm4p0iscIt5bM69cAz5dV"/>
+<div class="absolute bottom-4 left-4 flex gap-2">
+<span class="bg-black/60 glass-panel px-3 py-1 rounded text-[10px] uppercase font-semibold tracking-widest">Large Shuttle</span>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-2xl mb-1">VW Crafter</h3>
+<p class="font-body text-xs text-on-surface-variant uppercase tracking-widest">Corporate Transit</p>
+</div>
+<div class="text-right">
+<div class="flex items-center gap-4 text-on-surface-variant text-xs mb-4">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]" data-icon="person">person</span> 14</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]" data-icon="luggage">luggage</span> 14</span>
+</div>
+<button class="text-primary text-[10px] font-bold uppercase tracking-widest hover:underline">Select Vehicle</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Regional Footprint -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-4">
+<span class="font-label text-primary uppercase tracking-[0.4em] text-[10px]">Territory</span>
+<h2 class="font-headline text-4xl md:text-5xl mt-4 font-light mb-8">Regional <span class="italic">Footprint</span></h2>
+<p class="font-body text-on-surface-variant leading-relaxed mb-10">We transcend borders to connect Southern Africa's major economic hubs. From the streets of Sandton to the horizons of Mozambique.</p>
+<ul class="space-y-4">
+<li class="flex items-center gap-4 text-sm font-semibold tracking-widest uppercase">
+<span class="w-2 h-2 rounded-full bg-primary"></span> South Africa
+                        </li>
+<li class="flex items-center gap-4 text-sm font-semibold tracking-widest uppercase text-on-surface/60">
+<span class="w-2 h-2 rounded-full border border-primary/40"></span> Zimbabwe
+                        </li>
+<li class="flex items-center gap-4 text-sm font-semibold tracking-widest uppercase text-on-surface/60">
+<span class="w-2 h-2 rounded-full border border-primary/40"></span> Botswana
+                        </li>
+<li class="flex items-center gap-4 text-sm font-semibold tracking-widest uppercase text-on-surface/60">
+<span class="w-2 h-2 rounded-full border border-primary/40"></span> Mozambique
+                        </li>
+<li class="flex items-center gap-4 text-sm font-semibold tracking-widest uppercase text-on-surface/60">
+<span class="w-2 h-2 rounded-full border border-primary/40"></span> Lesotho
+                        </li>
+</ul>
+</div>
+<div class="lg:col-span-8 relative rounded-xl overflow-hidden shadow-2xl border border-outline-variant/10">
+<div class="w-full h-[500px] bg-surface-container-high relative">
+<!-- Simulated Map -->
+<img alt="Southern Africa Map" class="w-full h-full object-cover grayscale opacity-20" data-alt="Abstract aerial satellite view of a topographical map with deep shadows and glowing orange points of interest" data-location="Johannesburg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkUt6tft245L838nomX8UBP4sEMRT4Wq_cJznelgiCNT9AMfutyHUZR-pCuNabwxr7LkeE4FoDoUSJzfYDXqnzl5AicUSxgq3CgZ8KzeGlMupaDnUPJV33NriKmIHBZlK8jQeIS9cpUQlc4-Q7tjEYiHWtKgY9NHss16u_4XxMImp50nmKZhWjRRAjH6KJZb3AZ5s9x3ALgew2ucb9slmc0HyTh5Vt0wx7QELWefDUViNyYeT0gFmhL6AZC7i2rgnjBOF9ydztgLTR"/>
+<!-- Route Visualizers -->
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="relative w-full h-full">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-primary rounded-full animate-pulse shadow-[0_0_20px_#E9C176]"></div>
+<svg class="absolute inset-0 w-full h-full pointer-events-none">
+<path d="M400,250 Q500,150 600,100" fill="none" opacity="0.4" stroke="#E9C176" stroke-dasharray="4,4" stroke-width="1"></path>
+<path d="M400,250 Q300,180 200,150" fill="none" opacity="0.4" stroke="#E9C176" stroke-dasharray="4,4" stroke-width="1"></path>
+<path d="M400,250 Q550,300 700,350" fill="none" opacity="0.4" stroke="#E9C176" stroke-dasharray="4,4" stroke-width="1"></path>
+</svg>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Booking Form -->
+<section class="py-24 bg-surface-container-lowest" id="contact">
+<div class="max-w-4xl mx-auto px-6">
+<div class="text-center mb-16">
+<span class="font-label text-primary uppercase tracking-[0.4em] text-[10px]">Reservation</span>
+<h2 class="font-headline text-4xl md:text-5xl mt-4 font-light">Secure Your <span class="italic">Transfer</span></h2>
+</div>
+<form class="bg-surface-container p-8 md:p-12 rounded-xl border border-outline-variant/10">
+<!-- Step 1 Indicator -->
+<div class="flex items-center gap-4 mb-12">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-full metallic-gradient flex items-center justify-center text-on-primary font-bold text-xs">1</span>
+<span class="text-xs uppercase tracking-widest font-bold">Trip Details</span>
+</div>
+<div class="h-px flex-1 bg-outline-variant/20"></div>
+<div class="flex items-center gap-2 opacity-30">
+<span class="w-8 h-8 rounded-full border border-on-surface flex items-center justify-center text-xs font-bold">2</span>
+<span class="text-xs uppercase tracking-widest font-bold">Contact</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-6">
+<div>
+<label class="block text-[10px] text-on-surface-variant uppercase tracking-widest mb-2">Service Type</label>
+<select class="w-full bg-surface-container-highest border-none p-4 rounded-lg text-sm text-on-surface focus:ring-1 focus:ring-primary">
+<option>Corporate Transfer</option>
+<option>Executive Chauffeur</option>
+<option>Long Distance (SADC)</option>
+</select>
+</div>
+<div>
+<label class="block text-[10px] text-on-surface-variant uppercase tracking-widest mb-2">Pickup Date &amp; Time</label>
+<input class="w-full bg-surface-container-highest border-none p-4 rounded-lg text-sm text-on-surface focus:ring-1 focus:ring-primary" type="datetime-local"/>
+</div>
+</div>
+<div class="space-y-6">
+<div>
+<label class="block text-[10px] text-on-surface-variant uppercase tracking-widest mb-2">Number of Passengers</label>
+<input class="w-full bg-surface-container-highest border-none p-4 rounded-lg text-sm text-on-surface focus:ring-1 focus:ring-primary" min="1" placeholder="e.g., 2" type="number"/>
+</div>
+<div>
+<label class="block text-[10px] text-on-surface-variant uppercase tracking-widest mb-2">Vehicle Preference</label>
+<select class="w-full bg-surface-container-highest border-none p-4 rounded-lg text-sm text-on-surface focus:ring-1 focus:ring-primary">
+<option>Mercedes C-Class</option>
+<option>Mercedes V-Class</option>
+<option>Toyota Prado</option>
+<option>VW Crafter</option>
+</select>
+</div>
+</div>
+<div class="md:col-span-2">
+<label class="block text-[10px] text-on-surface-variant uppercase tracking-widest mb-2">Additional Requirements</label>
+<textarea class="w-full bg-surface-container-highest border-none p-4 rounded-lg text-sm text-on-surface focus:ring-1 focus:ring-primary" placeholder="Special luggage, child seats, or route preferences..." rows="4"></textarea>
+</div>
+<div class="md:col-span-2 flex justify-end">
+<button class="px-12 py-4 metallic-gradient text-on-primary rounded-lg font-bold uppercase tracking-[0.2em] text-xs hover:shadow-[0_0_20px_#E9C17633] transition-all" type="button">Next Step</button>
+</div>
+</div>
+</form>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#131313] py-16 px-6 border-t border-[#4E4639]/15">
+<div class="max-w-7xl mx-auto flex flex-col items-center gap-12 w-full text-center">
+<div class="flex flex-col items-center gap-4">
+<span class="font-['Noto_Serif'] text-3xl tracking-[0.3em] font-light text-[#E9C176]">MLALAZI</span>
+<p class="font-label text-primary uppercase tracking-[0.2em] text-[10px]">Courtesy Transfers</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 w-full text-left border-y border-outline-variant/10 py-12">
+<div class="space-y-4">
+<h4 class="font-bold uppercase text-[10px] tracking-widest text-primary">Headquarters</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                        15 Alice Lane, Sandton<br/>
+                        Johannesburg, 2196<br/>
+                        South Africa
+                    </p>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold uppercase text-[10px] tracking-widest text-primary">24/7 Operations</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                        +27 (0) 11 555 0123<br/>
+                        +27 (0) 82 555 9876<br/>
+                        ops@mlalazi.com
+                    </p>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold uppercase text-[10px] tracking-widest text-primary">Industry Memberships</h4>
+<div class="flex gap-4 items-center">
+<div class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="verified_user">verified_user</span>
+</div>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant">SATA Member<br/>#2013-9844</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center w-full gap-8">
+<div class="flex gap-8">
+<a class="text-white/40 hover:text-[#E9C176] transition-colors text-[12px] font-['Manrope'] tracking-wide" href="#">Privacy Policy</a>
+<a class="text-white/40 hover:text-[#E9C176] transition-colors text-[12px] font-['Manrope'] tracking-wide" href="#">Terms of Service</a>
+<a class="text-white/40 hover:text-[#E9C176] transition-colors text-[12px] font-['Manrope'] tracking-wide" href="#">FAQ</a>
+</div>
+<div class="flex gap-6">
+<a class="w-10 h-10 flex items-center justify-center border border-outline-variant/20 rounded-full hover:border-primary hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</a>
+<a class="w-10 h-10 flex items-center justify-center border border-outline-variant/20 rounded-full hover:border-primary hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="link">link</span>
+</a>
+</div>
+<p class="text-white/40 text-[12px] font-['Manrope'] tracking-wide">© 2024 Mlalazi Courtesy Transfers. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+<!-- Floating Action Button (WhatsApp) -->
+<div class="fixed bottom-8 right-8 z-[70] group">
+<div class="absolute -top-12 left-1/2 -translate-x-1/2 bg-surface-container-high px-4 py-2 rounded text-[10px] uppercase font-bold tracking-widest opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-xl border border-outline-variant/10">Chat with Ops</div>
+<button class="w-16 h-16 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-[0_10px_30px_rgba(37,211,102,0.3)] hover:scale-110 transition-transform active:scale-95">
+<svg class="w-8 h-8 fill-current" viewbox="0 0 24 24">
+<path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.412 2.503 1.112 3.485l-.719 2.624 2.688-.705c.922.503 1.975.79 3.095.791 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766m3.565 8.145c-.149.42-.77.766-1.063.811-.292.043-.654.068-1.054-.059-.265-.085-.601-.19-1.026-.372-1.802-.773-2.964-2.599-3.053-2.72-.09-.12-1.428-1.898-1.428-3.621 0-1.722.901-2.571 1.221-2.923.32-.352.705-.441.939-.441.235 0 .47.001.674.01.218.009.467-.082.733.56.265.642.903 2.199.982 2.358.079.158.132.343.027.554-.104.212-.158.344-.313.524-.154.181-.326.403-.464.541-.154.154-.315.32-.136.628.178.309.791 1.303 1.696 2.107.863.766 1.591 1.001 1.899 1.155.309.154.49.13.674-.082.183-.212.783-.909.991-1.221.209-.311.417-.258.704-.154.287.104 1.821.859 2.134 1.015.313.156.523.234.598.362.076.128.076.741-.073 1.161"></path>
+</svg>
+</button>
+</div>
+</body></html>
